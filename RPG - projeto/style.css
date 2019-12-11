@@ -1,0 +1,128 @@
+/*CSS PRINCIPAL*/
+
+/*PALETA DE CORES
+#1B3E59		azul
+#F2F0F0		gelo
+#FFAC00		amarelo
+#BF0404		vermelho
+#730202		vermelho escuro
+*/
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color:#F2F0F0;
+	margin:0px;
+}
+#wrapper{
+	height:100vh;
+}
+
+#barra-nav{
+	width:-webkit-fill-available;
+	height:max-content;
+	position:fixed;
+	padding:10px;
+	background-color:#BF0404;
+	z-index:2;
+}
+
+#logo{
+	padding-left:75px;
+	padding-right:100px;
+	position:relative;
+}
+
+a{
+	text-decoration:none;
+}
+.botao{
+	font-family: 'Bungee', cursive;
+	vertical-align:bottom;
+	color:#000000;
+	border:none;
+	padding:10px .5%;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size: 25px;
+    margin: 1px 0.5%;
+	position:relative;
+    cursor: pointer;	
+}
+
+#menu{
+	width:20%;
+}
+
+#main_image{
+	width:100%;
+	position:relative;
+	top:-10px;
+	z-index:1;
+}
+
+article{
+	width:98%;
+	height:overflow;
+	float:left;
+	margin-right:.5%;
+}
+
+section{
+	font-family: 'Berkshire Swash', cursive;
+	color:white;
+	float:center;
+	width:90%;
+	min-height:250px;
+	overflow:hidden;
+	background-color:#FFF8DC;
+	background-size:100%;
+	margin:1%;	
+}
+
+/*aside{
+	width:20.5%;
+	min-height:100px;
+	overflow:hidden;
+	background-color:#FFF8DC;
+	position:static;
+	float:right;
+	margin:1%;
+	margin-left:.5%;}
+*/
+
+	
+
+footer{
+	width:webkit-fill-available;
+	height:25px;
+	position:relative;
+	padding:10px;
+	background-color:#BF0404;
+	z-index:2;
+	clear:both;
+}
+
+#DnD_sec{
+	background-image:url('img/DnD.jpg');
+	
+	}
+
+.grad{
+	/*background:linear-gradient(to right,black,transparent);*/
+	background-image:url('img/degrade.png');
+	background-repeat:no-repeat;
+	min-height:250px;
+	overflow:hidden;
+}
+
+#Intro{
+	color:black;
+	width:80%;
+	padding-left:6%;
+	line-height:200%;
+	color:#000000;
+}

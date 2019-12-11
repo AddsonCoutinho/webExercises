@@ -1,0 +1,167 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+*{
+	padding: 0px;
+	margin:0px;
+}
+body{
+	background-color:#47484A;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+header{
+	height: 50vw;
+}
+nav{
+	width: 100%;
+	height: 60px;
+	display: inline;
+	position: fixed;
+	background-color: #343236;
+	border-bottom:2px solid #47484A;
+	z-index: 1;
+}
+article{
+	text-align: center;
+	
+}
+article h2{
+	font-size: 4em;
+	margin-bottom: 10px;
+	padding: 10px 50px;
+}
+article .title{
+	margin: auto;
+	height: 90px;
+	width: 71%;
+	background-color: #343236;
+	color: #F1EAEE;
+	text-align: left;
+	font-family: 'Noto Sans', sans-serif;
+}
+article .meta{
+	margin: auto;
+	height: 20px;
+	width: 71%;
+	background-color: #343236;
+	text-align: left;
+	color: 	#7e7e87;
+}
+article .meta p{
+	padding-left: 50px; 
+}
+section{
+	margin:auto;
+	width: 71%;
+	background-color: #343236;
+	padding: 5px 0px;
+
+}
+section p{
+	margin: 0px 50px;
+	color: #f1eaee;
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+.container{
+	width: 630px;
+	height: 340px;
+	margin: auto;
+	position: relative;
+	top: 200px;
+	text-align: center;
+}
+
+.caixinha{
+	height: 300px;
+	width: 600px;
+}
+.divTras{
+	border:10px solid #ff0097;	
+	transform: rotate(3deg);
+}
+
+.divFrente{	
+	border:10px solid #14BFCC;
+	background: rgba(172,172,164,0.25);
+	transform: rotate(-3deg);
+	position: relative;
+	top:-320px;
+}
+.divTexto{
+	text-transform: uppercase;
+	position: relative;
+	top: 265px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: #f1eaee;
+	font-size: 2em;	
+	font-family: 'Bebas Neue', cursive;
+}
+.overlay{
+	height: 125px;
+	width: 300px;
+	float: right;
+	position: fixed;
+	top: 70px;	
+	left: 77.8%;
+	background: rgba(241,234,238,0.9);
+	visibility: hidden;
+	margin: 0px 20px;
+	display: inline;
+	border-radius: 10px;
+	text-align: center;
+}
+.overlay:target{
+	
+	visibility: visible;
+	opacity: 1;
+}
+.overlay fieldset{
+	border:0px;
+}
+.overlay input{
+	margin:2px;
+}
+ul{
+	list-style: none;
+	
+	
+}
+ul li{
+	display: inline;
+}
+ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Black Ops One', cursive;
+}
+ul li .abas{	
+	color: #FFE019;
+	line-height: 4vw;	
+	font-size: 1.6em;
+	padding: 10px 30px;
+	margin-left: 3px;
+}
+ul li .abas:hover{
+	background-color:#47484A;
+}
+ul li .btn{
+	color: #47484A;
+	line-height: 2.8vw;
+	font-size: 1.3em;
+	padding: 0px 20px;
+
+	background-color: #FFE019;
+	margin: 8px 30px;
+	border-radius: 5px;
+	float: right;
+}
+

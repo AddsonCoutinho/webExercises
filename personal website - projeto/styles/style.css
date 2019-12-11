@@ -1,0 +1,77 @@
+
+/*------------------------------------FONTES----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+/*---------------------------------------------------------------------------------	*/
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #CCCCCC;
+}
+a:visited{
+	color:black;
+}
+a:link{
+	color:black;
+}
+#header #navegacao ul{
+	
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+li{
+	padding-left:3vw; 
+	display: inline;
+	float: right;
+}
+#header #navegacao{
+	position: fixed;
+	width: 95vw;
+	background-color: #BFBFBF;
+	height: 8vh;
+	font-size: 1.1em;
+	padding-right: 5vw;
+	font-family: 'Bebas Neue', cursive;
+}
+
+#header #navegacao a{
+	line-height: 8vh;
+	text-decoration: none;
+	text-decoration-color: black;
+	text-align: center;
+	font-size: 2em;
+	display: block;
+}
+#navegacao{
+	display: block;
+}
+#welcome img{
+	width: 100vw;
+
+}
+#welcome {
+	height: 100vh;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+#home{
+	height: 100vh;
+	background-color: #025920;
+	
+}
+#portifolio{
+	height: 100vh;
+	background-color: #F2A950;
+
+}
+#sobre{
+	height: 100vh;
+	background-color: #F2C6A0;
+
+}
+#contato{
+	height: 100vh;
+	background-color: #D97855;
+
+}

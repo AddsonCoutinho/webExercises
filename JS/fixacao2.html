@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+		<label for="nome">Nome: </label><br>
+		<input type="text" name="nome" id="nome"><br>
+		<label for="altura">Altura(centimetros): </label><br>
+		<input type="text" name="altura" id="altura"><br>
+		<label for="peso">Peso: </label><br>
+		<input type="number" name="peso" id="peso"><br>
+		<button onclick="imc()">Enviar</button>
+	<p id="situacao"></p>
+	<script>
+		function avaliacao(massa){
+			/*
+				a) Se M estiver abaixo de 16 : Baixo peso muito grave
+				b) Se M estiver entre 16 e 16,99: Baixo peso grave
+				c) Se M estiver entre 17 e 18,49: Baixo peso
+				d) Se M estiver entre 18,50 e 24,99: Peso normal
+				e) Se M estiver entre 25 e 29,99: Sobrepeso
+				f) Se M estiver entre 30 e 34,99: Obesidade grau I
+				g) Se M estiver entre 35 e 39,99: Obesidade grau II
+				h) Se M for maior que 40: Obesidade grau III 
+			*/
+			
+				if(massa < 16)
+					return "Baixo peso muito grave";
+				else if(massa < 16.99)
+					return "Baixo peso grave";
+				else if(massa < 18.49)
+					return "Baixo peso";
+				else if(massa < 24.99)
+					return "Peso normal";
+				else if(massa < 29.99)
+					return "Sobrepeso";
+				else if(massa < 34.99)
+					return "Obesidade grau I";
+				else if(massa < 39.99)
+					return "Obesidade grau II";
+				else if(massa >= 40)
+					return "Obesidade grau III";
+		}
+
+		function imc(){
+			var nome = document.getElementById("nome").value;
+			var altura = (parseFloat(document.getElementById("altura").value/100));
+			var peso = parseFloat(document.getElementById("peso").value);
+
+			var massa = peso / Math.pow(altura,2);
+			document.getElementById("situacao").innerHTML = nome + " possui índice de massa corporal igual a " + massa.toFixed(2) + ", sendo classificado como: " + avaliacao(massa);	
+		}
+	</script>
+
+	</body>
+</html>

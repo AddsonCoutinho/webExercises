@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+	<h1 id="titulo"></h1>
+	<p id="descricao"></p>
+	<h3 id="erro"></h3>
+	<script>
+		var callbackSucesso = function(titulo, descricao){
+			document.getElementById("titulo").innerHTML = titulo;
+			document.getElementById("descricao").innerHTML = descricao;
+		}
+
+		var callbackErro = function(erro){
+			document.getElementById("erro").innerHTML = erro;
+		}
+
+		function exibirArtigo(id, callbackSucesso, callbackErro){
+			//logica de busca
+			var sucesso = false;
+			var titulo = "w3Schools"
+			var descricao = "THE WORLD'S LARGEST WEB DEVELOPER SITE"
+			//logica de busca
+
+			if(sucesso){
+				callbackSucesso(titulo, descricao);
+			}else{
+				callbackErro("Erro - Artigo não encontrado");
+			}
+		}
+
+		exibirArtigo(1, callbackSucesso, callbackErro);
+	</script>
+
+	</body>
+</html>

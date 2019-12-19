@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+	
+	<form>
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome"><br>
+		<label for="idade">Idade:</label>
+		<input type="number" name="idade" id="idade" min="0" max="150">
+		<input type="submit" onclick="teste()">
+	</form>
+
+	<script>
+		function teste(){
+
+			var nome = document.getElementById("nome").value;
+			var idade = document.getElementById("idade").value;
+			alert(nome + " é considerado(a) um(a) " + faixaEtaria(idade));
+		}
+
+		
+		function faixaEtaria(idade){
+		if(idade >= 0 && idade < 15){
+				return("criança");				
+			}else if(idade < 30){
+				return("jovem");				
+			}else if(idade < 60){
+				return("adulto");
+			}else{
+				return("idoso");
+			}
+		}
+	</script>
+
+	</body>
+</html>

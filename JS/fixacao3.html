@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+		<label for="num1">Num1: </label><br>
+		<input type="number" name="num1" id="num1"><br>
+		<label for="num2">Num2: </label><br>
+		<input type="number" name="num2" id="num2"><br>
+		<label for="operacao">Operacao: </label><br>
+		<input type="text" name="operacao" id="operacao"><br>
+		<button onclick="calculo()">Calcular</button>
+	<p id="situacao" style="display: hidden;"></p>
+	<script>
+		function calculo(num1, num2, operacao){
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var operacao = document.getElementById("operacao").value;
+
+			if (operacao == 'soma') {				
+				document.getElementById("situacao").innerHTML ="O resultado é " + (num1 + num2).toFixed(5);
+			}else{ 
+				if (operacao == "subtracao") {
+					document.getElementById("situacao").innerHTML ="O resultado é " + (num1 - num2).toFixed(5);
+				} else{
+					document.getElementById("situacao").innerHTML = "Operacao invalida";
+				}
+			}
+			document.getElementById("situacao").setAttribute("style","display: block;" );
+		}
+	</script>
+
+	</body>
+</html>
